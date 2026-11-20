@@ -21,7 +21,7 @@ export const site: SiteConfig = {
   // pix: { mode: 'demo' },
   pix: { mode: 'live', key: chavePix , recipient: 'VINÍCIUS BIAJONI BRAGA FLÔR', city: 'BARRA MANSA' },
   address: {
-    mode: 'demo',
+    mode: 'public',
     note: 'Se optar pela compra em loja, use o endereço de entrega no checkout.',
     lines: ['Lis e Vinícius', 'Rua Moacir Padilha, 70 • Centro', 'Niterói / RJ • CEP 24020-350']
   },
