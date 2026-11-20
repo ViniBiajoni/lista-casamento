@@ -810,27 +810,3 @@ export const gifts: Gift[] = [
     "pix": true
   }
 ];
-
-if (import.meta.env.DEV) {
-  const experienciasComLink = gifts.filter(
-    gift => gift.category === 'experiencias' && gift.storeUrl
-  );
-
-  const produtosSemLink = gifts.filter(
-    gift => gift.category !== 'experiencias' && !gift.storeUrl
-  );
-
-  if (experienciasComLink.length) {
-    console.warn(
-      'Remova storeUrl destas experiências:',
-      experienciasComLink.map(gift => gift.id)
-    );
-  }
-
-  if (produtosSemLink.length) {
-    console.warn(
-      'Adicione storeUrl nestes produtos:',
-      produtosSemLink.map(gift => gift.id)
-    );
-  }
-}
