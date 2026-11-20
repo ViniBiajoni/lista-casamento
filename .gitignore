@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vercel/
+.env*
+*.local
+.DS_Store
+*.history
+.history/
+
+
+
+
