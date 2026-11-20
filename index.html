@@ -7,322 +7,126 @@
   <meta name="description" content="Uma lista de presentes de casamento para celebrar com a gente.">
   <title>Lista de Casamento</title>
 </head>
-
 <body id="inicio">
   <a class="skip" href="#presentes">Pular para os presentes</a>
-
   <header class="site-header">
     <div class="wrap nav-layout">
-      <a class="wordmark" href="#inicio" data-names>Clara &amp; Gabriel</a>
-
+      <a class="wordmark" href="#inicio" data-names>Lis &amp; Vinícius</a>
       <nav aria-label="Navegação principal">
         <a href="#presentes">Presentes</a>
         <a href="#como-presentear">Como presentear</a>
         <a href="#entrega">Entrega</a>
       </nav>
-
-      <a class="nav-cta" href="#presentes">
-        Ver a lista <span data-icon="arrow-up"></span>
-      </a>
+      <a class="nav-cta" href="#presentes">Ver a lista <span data-icon="arrow-up"></span></a>
     </div>
   </header>
-
   <main>
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow hero-date" id="hero-date"></p>
-
-        <h1 id="hero-title">
-          Clara <em>&amp;</em><br>Gabriel
-        </h1>
-
+        <h1 id="hero-title">Lis <em>&amp;</em><br>Vinícius</h1>
         <p class="hero-text" id="hero-message"></p>
-
-        <a class="button primary hero-button" href="#presentes">
-          <span data-icon="gift"></span>
-          Explorar presentes
-          <span data-icon="arrow-down"></span>
-        </a>
-
+        <a class="button primary hero-button" href="#presentes"><span data-icon="gift"></span> Explorar presentes <span data-icon="arrow-down"></span></a>
         <p class="hero-note">Sua presença já é nosso maior presente.</p>
       </div>
-
       <figure class="hero-photo">
-        <img
-          id="cover"
-          alt=""
-          fetchpriority="high"
-          width="1200"
-          height="900"
-        >
-
-        <figcaption>
-          <span></span> UM NOVO CAPÍTULO
-        </figcaption>
+        <img id="cover" alt="" fetchpriority="high" width="1200" height="900">
+        <figcaption><span></span> UM NOVO CAPÍTULO</figcaption>
       </figure>
     </section>
-
     <section class="catalog wrap" id="presentes" aria-labelledby="catalog-title">
-      <p class="eyebrow section-index">
-        <span></span> 01 / A LISTA
-      </p>
-
+      <p class="eyebrow section-index"><span></span> 01 / A LISTA</p>
       <h2 id="catalog-title">Nossa lista de presentes</h2>
-
-      <p class="intro">
-        Escolha um presente para a nossa casa ou uma experiência para a lua de mel.
-      </p>
-
+      <p class="intro">Escolha um presente para a nossa casa, uma experiência para a lua de mel ou contribua com um Pix livre.</p>
       <div class="catalog-tools">
-        <div
-          class="filters"
-          id="filters"
-          role="group"
-          aria-label="Filtrar por categoria"
-        ></div>
-
+        <div class="filters" id="filters" role="group" aria-label="Filtrar por categoria"></div>
         <div class="catalog-options">
-          <label class="per-page-label" for="per-page">
-            Itens por página
-          </label>
-
-          <select
-            id="per-page"
-            class="per-page-select"
-            aria-label="Itens por página"
-          >
-            <option value="6">6</option>
-            <option value="10" selected>10</option>
-            <option value="16">16</option>
-            <option value="24">24</option>
+          <label class="per-page-label" for="per-page">Itens por página</label>
+          <select id="per-page" class="per-page-select">
+            <option value="6">6</option><option value="10" selected>10</option>
+            <option value="16">16</option><option value="24">24</option>
           </select>
-
-          <p class="count" id="gift-count" role="status"></p>
+          <p class="count" id="gift-count" role="status" aria-live="polite"></p>
         </div>
       </div>
-
       <div id="gift-grid" class="gift-grid"></div>
-
-      <nav
-        class="pagination"
-        id="pagination"
-        aria-label="Paginação de presentes"
-        hidden
-      ></nav>
-
-      <div class="free-pix-card">
+      <nav class="pagination" id="pagination" aria-label="Paginação de presentes" hidden></nav>
+      <div class="free-pix-card" id="free-pix-card">
         <div class="free-pix-content">
           <span class="guide-icon" data-icon="pix" aria-hidden="true"></span>
-
-          <div>
-            <h3>Pix livre</h3>
-
-            <p>
-              Prefere contribuir com um valor de sua escolha?
-              Escaneie o QR Code ou use o Pix Copia e Cola.
-            </p>
-          </div>
+          <div><h3>Pix livre</h3><p>Não escolheu um presente específico? Contribua com o valor que desejar para o nosso novo começo.</p></div>
         </div>
-
-        <button type="button" class="button primary" id="open-free-pix">
-          <span data-icon="pix"></span> Contribuir com um valor
-        </button>
+        <button type="button" class="button primary" id="open-free-pix" aria-haspopup="dialog" aria-controls="pix-dialog"><span data-icon="pix"></span> Contribuir com um valor</button>
       </div>
-
-      <noscript>
-        <p>Ative o JavaScript para ver a lista de presentes.</p>
-      </noscript>
+      <noscript><p>Ative o JavaScript para ver os presentes e gerar o Pix.</p></noscript>
     </section>
-
     <section class="guide wrap" id="como-presentear" aria-labelledby="guide-title">
-      <p class="eyebrow section-index">
-        <span></span> 02 / COMO PRESENTEAR
-      </p>
-
+      <p class="eyebrow section-index"><span></span> 02 / COMO PRESENTEAR</p>
       <h2 id="guide-title">Dois jeitos de presentear</h2>
-
       <div class="guide-grid">
         <article id="pix-guide" class="guide-card">
-          <div class="guide-card-header">
-            <span class="guide-icon" data-icon="pix" aria-hidden="true"></span>
-            <h3>Enviar um Pix</h3>
-          </div>
-
+          <div class="guide-card-header"><span class="guide-icon" data-icon="pix" aria-hidden="true"></span><h3>Enviar um Pix</h3></div>
           <p id="pix-guide-text" class="guide-text"></p>
-
-          <ul class="guide-steps">
-            <li>
-              <span class="step-icon" data-icon="qr-code" aria-hidden="true"></span>
-              <span>Escaneie o QR Code exibido no presente escolhido.</span>
-            </li>
-
-            <li>
-              <span class="step-icon" data-icon="copy" aria-hidden="true"></span>
-              <span>Ou copie o código Pix e cole no app do seu banco.</span>
-            </li>
-
-            <li>
-              <span class="step-icon" data-icon="check-circle" aria-hidden="true"></span>
-              <span>Confirme o nome do recebedor e o valor antes de finalizar.</span>
-            </li>
-          </ul>
-
-          <p class="guide-note">
-            O site não confirma pagamentos automaticamente.
-          </p>
+          <ol class="guide-steps">
+            <li>Escolha um presente ou clique em “Contribuir com um valor”.</li>
+            <li>Confira ou altere o valor e clique em “Gerar QR Code”.</li>
+            <li>Escaneie o QR Code ou use o Pix Copia e Cola no app do banco.</li>
+          </ol>
+          <p class="guide-note">No modo demonstração, os códigos não permitem pagamentos.</p>
         </article>
-
         <article class="guide-card">
-          <div class="guide-card-header">
-            <span class="guide-icon" data-icon="bag" aria-hidden="true"></span>
-            <h3>Comprar em uma loja</h3>
-          </div>
-
+          <div class="guide-card-header"><span class="guide-icon" data-icon="bag" aria-hidden="true"></span><h3>Comprar em uma loja</h3></div>
           <p id="store-guide" class="guide-text"></p>
-
-          <ul class="guide-steps">
-            <li>
-              <span class="step-icon" data-icon="external" aria-hidden="true"></span>
-              <span>Abra o link do presente e confira preço, frete e prazo.</span>
-            </li>
-
-            <li>
-              <span class="step-icon" data-icon="map" aria-hidden="true"></span>
-              <span>Utilize o endereço de entrega informado na seção “Entrega”.</span>
-            </li>
-
-            <li>
-              <span class="step-icon" data-icon="gift" aria-hidden="true"></span>
-              <span>Escolha a embalagem ou mensagem, se a loja permitir.</span>
-            </li>
-          </ul>
-
-          <p class="guide-note">
-            Recomendamos conferir o prazo de entrega antes de finalizar a compra.
-          </p>
+          <ol class="guide-steps">
+            <li>Abra “Ver na loja” no cartão do presente.</li>
+            <li>Confira o produto, o preço, o frete e o prazo de entrega.</li>
+            <li>Confira com os noivos os dados de entrega antes da compra.</li>
+          </ol>
+          <p class="guide-note">Os links podem abrir buscas. Confira o modelo escolhido antes de comprar.</p>
         </article>
       </div>
     </section>
-
     <section class="delivery wrap" id="entrega" aria-labelledby="delivery-title">
-      <div>
-        <p class="eyebrow section-index">
-          <span></span> 03 / ENTREGA
-        </p>
-
-        <h2 id="delivery-title">Onde enviar</h2>
-        <p id="delivery-note"></p>
-      </div>
-
+      <div><p class="eyebrow section-index"><span></span> 03 / ENTREGA</p><h2 id="delivery-title">Onde enviar</h2><p id="delivery-note"></p></div>
       <div class="address-card">
         <span class="guide-icon" data-icon="map" aria-hidden="true"></span>
-
-        <div>
-          <p class="eyebrow" id="address-label">ENDEREÇO DE ENTREGA</p>
-
-          <address id="address-lines"></address>
-
-          <button
-            type="button"
-            class="button secondary copy-address"
-            id="copy-address"
-          >
-            <span data-icon="copy"></span> Copiar endereço
-          </button>
-
+        <div><p class="eyebrow" id="address-label">ENDEREÇO DE ENTREGA</p><address id="address-lines"></address>
+          <button type="button" class="button secondary copy-address" id="copy-address"><span data-icon="copy"></span> Copiar endereço</button>
           <div id="address-status" class="status" role="status"></div>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div>
-        <a class="wordmark" href="#inicio" data-names>Clara &amp; Gabriel</a>
-        <p>Obrigada por fazer parte da nossa história.</p>
-      </div>
-
-      <a class="button secondary" href="#inicio">
-        Voltar ao topo <span data-icon="arrow-up"></span>
-      </a>
-    </div>
-  </footer>
-
-  <dialog
-    id="pix-dialog"
-    aria-labelledby="pix-title"
-    aria-describedby="pix-item"
-  >
+  <footer class="site-footer"><div class="wrap footer-inner">
+    <div><a class="wordmark" href="#inicio" data-names>Lis &amp; Vinícius</a><p>Obrigado por fazer parte da nossa história.</p></div>
+    <a class="button secondary" href="#inicio">Voltar ao topo <span data-icon="arrow-up"></span></a>
+  </div></footer>
+  <dialog id="pix-dialog" aria-labelledby="pix-title" aria-describedby="pix-item">
     <div class="modal-inner">
-      <form method="dialog">
-        <button
-          class="modal-close"
-          type="submit"
-          aria-label="Fechar modal"
-          autofocus
-        >
-          <span data-icon="close"></span>
-        </button>
-      </form>
-
-      <p class="eyebrow modal-kicker">
-        <span data-icon="pix"></span> PRESENTE EM DINHEIRO
-      </p>
-
+      <form method="dialog"><button class="modal-close" type="submit" aria-label="Fechar modal" autofocus><span data-icon="close"></span></button></form>
+      <p class="eyebrow modal-kicker"><span data-icon="pix"></span> PRESENTE EM DINHEIRO</p>
       <h2 id="pix-title">Presentear via Pix</h2>
-
       <p id="pix-item"></p>
-
       <div class="pix-value-field">
-        <label class="field-label" for="pix-amount">
-          Valor do presente
-        </label>
-
+        <label class="field-label" for="pix-amount">Quanto deseja presentear?</label>
         <div class="pix-value-input">
-          <span aria-hidden="true">R$</span>
-
-          <input
-            id="pix-amount"
-            type="number"
-            min="1"
-            step="0.01"
-            inputmode="decimal"
-            placeholder="0,00"
-          >
+          <span class="pix-currency" aria-hidden="true">R$</span>
+          <input id="pix-amount" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" placeholder="0,00" aria-describedby="pix-amount-hint pix-status">
         </div>
+        <small id="pix-amount-hint" class="pix-amount-hint">Digite o valor desejado, por exemplo: 119,90.</small>
       </div>
-
       <strong id="pix-price" class="pix-price"></strong>
-
-      <button type="button" class="button primary" id="generate-pix">
-        <span data-icon="qr-code"></span> Gerar QR Code
-      </button>
-
+      <button type="button" class="button primary" id="generate-pix"><span data-icon="qr-code"></span> Gerar QR Code</button>
       <div id="pix-qr" class="pix-qr"></div>
-
       <p id="pix-help" class="pix-help"></p>
-
       <div id="pix-copy-area" hidden>
         <label for="pix-code" class="field-label">Pix Copia e Cola</label>
-
-        <input
-          id="pix-code"
-          type="text"
-          readonly
-          spellcheck="false"
-          autocomplete="off"
-        >
-
-        <button type="button" class="button primary" id="copy-pix">
-          <span data-icon="copy"></span> Copiar código Pix
-        </button>
+        <input id="pix-code" type="text" readonly spellcheck="false" autocomplete="off">
+        <button type="button" class="button primary" id="copy-pix" disabled><span data-icon="copy"></span> Copiar código Pix</button>
       </div>
-
-      <div id="pix-status" class="status" role="status"></div>
+      <div id="pix-status" class="status" role="status" aria-live="polite"></div>
     </div>
   </dialog>
-
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

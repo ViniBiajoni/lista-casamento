@@ -9,6 +9,8 @@ type SiteConfig = {
   address: { mode: 'demo' | 'public' | 'hidden'; note: string; lines: string[] };
 };
 
+const chavePix = 'bb299fbb-676e-408f-bfb8-04271cad6f5c';
+
 export const site: SiteConfig = {
   firstName: 'Lis',
   secondName: 'Vinícius',
@@ -17,10 +19,10 @@ export const site: SiteConfig = {
   cover: 'images/capa/casal.webp',
   coverAlt: 'Casal ilustrativo caminhando entre dunas ao pôr do sol',
   // pix: { mode: 'demo' },
-  pix: { mode: 'live', key: '191730b5-3e10-4ab8-a66c-e5459c385fbf', recipient: 'VINÍCIUS BIAJONI BRAGA FLÔR', city: 'BARRA MANSA' },
+  pix: { mode: 'live', key: chavePix , recipient: 'VINÍCIUS BIAJONI BRAGA FLÔR', city: 'BARRA MANSA' },
   address: {
     mode: 'demo',
     note: 'Se optar pela compra em loja, use o endereço de entrega no checkout.',
-    lines: ['Lis e Vinícius', 'Rua Moacir Padilha, 70 • Centro', 'Niterói / RJ • CEP 24020-350'],
+    lines: ['Lis e Vinícius', 'Rua Moacir Padilha, 70 • Centro', 'Niterói / RJ • CEP 24020-350']
   },
 };
