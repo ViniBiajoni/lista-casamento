@@ -70,11 +70,11 @@ export const site: SiteConfig = {
 
     addresses: [
       {
-        label: 'Entrega para Lis',
+        label: 'Entrega no endereço atual da Lis',
 
         lines: [
-          'Lis (futuro lar Lis e Vinícius)',
-          'Rua Moacir Padilha, 70 • Centro',
+          'Lis Ribeiro',
+          'Rua Moacir Padilha, 70, bloco 01, apto 1204, • Centro (portaria 24h)',
           'Niterói / RJ • CEP 24020-350',
         ],
       },
@@ -82,9 +82,9 @@ export const site: SiteConfig = {
       // Para adicionar outro endereço, descomente e preencha:
       
       {
-        label: 'Entrega para Vinícius',
+        label: 'Entrega no endereço atual do Vinícius',
         lines: [
-          'Vinícius e família',
+          'Vinícius Biajoni',
           'Rua Eduardo Pereira da Costa Rangel, 66, apto 202, Verbo Divino',
           'Barra Mansa / RJ • CEP 27345330',
         ],
